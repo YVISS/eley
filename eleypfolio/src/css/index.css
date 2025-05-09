@@ -17,15 +17,6 @@
   margin: 0;
   padding: 0;
 }
-.root{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
 button {
   display: f;
   border-radius: 8px;
@@ -39,3 +30,67 @@ button {
   transition: border-color 0.25s;
 }
 
+.student{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #1a1a1a;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 25vw);  
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.student .std__info{
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #1a1a1a;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: background-color 0.25s, color 0.25s;
+}
