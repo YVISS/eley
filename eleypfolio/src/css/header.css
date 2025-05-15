@@ -1,3 +1,4 @@
+@import url('./index.css');
 
 nav {
   display: flex;
@@ -23,9 +24,11 @@ nav ul li {
   list-style: none;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 
+header .header__icons {
+  cursor: pointer;
+}
 
 header {
   display: flex;
@@ -39,19 +42,19 @@ header {
 }
 
 header svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
   max-width: 30px;
   max-height: 30px;
-  color:hsl(187, 76%, 90%);
-  transition: all 0.4s ease-in-out;
+  color: var(--text2);
+  transition: all 0.2s ease-in-out;
 }
 
-header svg:hover{
-    color:hsl(187, 76%, 70%);
+header svg:hover {
+  color: var(--text1);
 }
 
-header .header__switcher{
+header .header__switcher {
   background-color: transparent;
   border-radius: 0%;
   cursor: pointer;
@@ -64,14 +67,10 @@ header .header__switcher{
   margin: 0px;
 }
 
-header .header__line{
-    width: 2px;
-    height: 30px;
-    background-color: hsl(187, 76%, 90%);
-    margin: 5px;
-    transition: all 0.4s ease-in-out;
-}
-
-header header__icons{
-
+header .header__line {
+  width: 2px;
+  height: 30px;
+  background-color: var(--text2);
+  margin: 5px;
+  transition: all 0.4s ease-in-out;
 }

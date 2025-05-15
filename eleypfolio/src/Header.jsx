@@ -10,16 +10,40 @@ const lightIcon = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 const darkIcon = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z" /></svg>;
 
+const dimIcon = <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-shadow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M13 12h5" /><path d="M13 15h4" /><path d="M13 18h1" /><path d="M13 9h4" /><path d="M13 6h1" /></svg>;
 
 
 export default function Header() {
-    
-    const headDoc = document.firstElementChild;
-    const [dark, setDark] = useState(false);
+
+ // List of available themes in order
+  const themes = ['light', 'dark', 'dim'];
+
+  // Get current index or default to 0 (light)
+  function getCurrentThemeIndex() {
+    const current = document.documentElement.getAttribute('color-scheme');
+    return themes.indexOf(current !== null ? current : 'light');
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    const currentIndex = getCurrentThemeIndex();
+    const nextIndex = (currentIndex + 1) % themes.length;
+    const nextTheme = themes[nextIndex];
+    document.documentElement.setAttribute('color-scheme', nextTheme);
+    localStorage.setItem('preferred-theme', nextTheme);
+  }
+
+  // On page load, set theme from localStorage (if exists)
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('preferred-theme');
+    if (savedTheme && themes.includes(savedTheme)) {
+      document.documentElement.setAttribute('color-scheme', savedTheme);
+    }
+  });
+
+  
 
 
-
-    
 
     return (
         <>
@@ -27,10 +51,10 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li className="header__icons">{githubIcon}</li>
-                        <li>{linkedinIcon}</li>
-                        <li>{facebookIcon}</li>
+                        <li className="header__icons">{linkedinIcon}</li>
+                        <li className="header__icons">{facebookIcon}</li>
                         <li className="header__line"></li>
-                        <li className="header__theme"><button className="header__switcher" onClick={(e) => handleClick(e)}>{darkIcon}</button></li>
+                        <li className="header__theme"><button className="header__switcher" onClick={toggleTheme}>{darkIcon}</button></li>
                     </ul>
                 </nav>
             </header>
