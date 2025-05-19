@@ -81,7 +81,7 @@
     color: var(--text2);
   }
   .hero__info #typing-text{
-    color: var(--text4);
+    color: var(--typing-highlight);
   }
   .hero__info .hero__downloadables button::before {
     position: absolute;
@@ -109,3 +109,15 @@
   .hero__info .hero__downloadables button:hover::before {
     box-shadow: inset 0 0 0 10em var(--surface2);
   }
+
+  #typing-text::after {
+    content: '|';
+    color: var(--text1);
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
