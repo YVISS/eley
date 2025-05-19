@@ -1,6 +1,7 @@
-import Student from './Student.jsx'
+import Projects from './Projects.jsx'
 import Header from './Header.jsx'
 import Hero from './Hero.jsx';
+
 
 export default function MyApp() {
   return (
@@ -10,6 +11,7 @@ export default function MyApp() {
         <Hero />
         <div className="divider"></div>
         <main>
+        <Projects/>
         </main>  
         <footer>
           

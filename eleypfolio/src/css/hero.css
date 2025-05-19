@@ -1,3 +1,5 @@
+@import url(./index.css);
+
 .hero{
     display: flex;
     place-content: center;
@@ -16,7 +18,7 @@
     place-items: center;
     width: 100%;
     height: auto;
-    gap: 20px;
+    gap: 1vw;
     
 }
 
@@ -27,3 +29,83 @@
     aspect-ratio: 1/1;
     background-color: transparent;
 }
+.hero__info{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: start;
+    color: var(--text);
+    
+}
+
+.hero__info .hero__downloadables a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.hero__downloadables{
+    display: flex;
+    width: 100%;
+    height: auto;
+    place-items: center;
+    place-content: start;
+}
+
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.hero__info .hero__downloadables button {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--surface2);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  .hero__info .hero__downloadables button span {
+    margin: 10px;
+    color: var(--text1);
+  }
+
+  .hero__info .name-highlight{
+    color: var(--text2);
+  }
+  .hero__info #typing-text{
+    color: var(--text4);
+  }
+  .hero__info .hero__downloadables button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .hero__info .hero__downloadables button:hover {
+    color: #fff;
+    border: 1px solid var(--surface2);
+  }
+  
+  .hero__info .hero__downloadables button:hover::before {
+    box-shadow: inset 0 0 0 10em var(--surface2);
+  }
