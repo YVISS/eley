@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="hero">
             <div className="hero__container">
                 <div className="hero__img">
-                    <img src="./src/imgs/hero.jpg" alt="Hero Image" />
+                    <img src="/imgs/hero.jpg" alt="Hero Image" />
                 </div>
                 <div className="hero__info">
                     <h1 className="hero__name">Hi, I'm <span className="name-highlight">Lewee Aaron A. Ombac</span> 👋</h1>
