@@ -9,9 +9,8 @@ export default function Hero() {
                 </div>
                 <div className="hero__info">
                     <h1 className="hero__name">Hi, I'm <span className="name-highlight">Lewee Aaron A. Ombac</span> 👋</h1>
-                    <h2>Aspiring <span id="typing-text"></span></h2>
-                    <p>3rd Year BSCS Student | Passionate about Web Development & Design 🚀</p>
-                    <p className="hero__description"></p>
+                    <h2>Aspiring Frontend Developer<span id="typing-text"></span></h2>
+                    <p className="hero__description">3rd Year BSCS Student | Passionate about Web Development & Design 🚀</p>
                 </div>
             </div>
         </div>

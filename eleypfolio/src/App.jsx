@@ -9,8 +9,11 @@ export default function MyApp() {
         <Header />
         <Hero />
         <div className="divider"></div>
-        <div className="main-content">
-        </div>
+        <main>
+        </main>  
+        <footer>
+          
+        </footer>
       </div>
     </>
   );
