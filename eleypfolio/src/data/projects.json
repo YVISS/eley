@@ -1,0 +1,66 @@
+[
+    {
+        "category": "Apt-ease",
+        "imageID": "1",
+        "url": "/imgs/projects/aptease/aptease_img1.png",
+        "title": "Aptease Admin Page",
+        "description": "This is the admin page of Aptease",
+        "techUsed": ["React", "Node.js", "Express", "MongoDB"]
+    },
+    {
+        "category": "Apt-ease",
+        "imageID": "2",
+        "url": "/imgs/projects/aptease/aptease_img2.png",
+        "title": "Aptease Accounts Management Page",
+        "description": "This is the Accounts Management page of Aptease"
+    },
+    {
+        "category": "Apt-ease",
+        "imageID": "3",
+        "url": "/imgs/projects/aptease/aptease_img3.png",
+        "title": "Aptease User Page",
+        "description": "This is the user page of Aptease"
+    },
+    {
+        "category": "AUTMS",
+        "imageID": "4",
+        "url": "/imgs/projects/autms/autms_img1.png",
+        "title": "AUTMS Login Page",
+        "description": "This is the Login Page of AUTMS"
+    },
+    {
+        "category": "AUTMS",
+        "imageID": "5",
+        "url": "/imgs/projects/autms/autms_img2.png",
+        "title": "AUTMS Admin Home Page",
+        "description": "This is the Home Page of AUTMS"
+    },
+    {
+        "category": "AUTMS",
+        "imageID": "6",
+        "url": "/imgs/projects/autms/autms_img3.png",
+        "title": "AUTMS Ticket Management Page",
+        "description": "This is the Ticket Management Page of AUTMS"
+    },
+    {
+        "category": "Fiddlelity",
+        "imageID": "7",
+        "url": "/imgs/projects/fiddlelity/fiddlelity_img1.png",
+        "title": "Fiddlelity Website",
+        "description": "This is the Home Page of Fiddlelity"
+    },
+    {
+        "category": "Fiddlelity",
+        "imageID": "8",
+        "url": "/imgs/projects/fiddlelity/fiddlelity_img2.png",
+        "title": "Fiddlelity Menu Section",
+        "description": "This is the Menu Section of Fiddlelity"
+    },
+    {
+        "category": "Fiddlelity",
+        "imageID": "9",
+        "url": "/imgs/projects/fiddlelity/fiddlelity_img3.png",
+        "title": "Fiddlelity Shop and Add to Cart",
+        "description": "This is the Shop section with Add to cart Functionality of Fiddlelity"
+    }
+]

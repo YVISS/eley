@@ -1,0 +1,56 @@
+.projects{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.page_title{
+    display: flex;
+    place-content: center;
+    place-items: start;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.page_title .title{
+    display: flex;
+    place-content: start;
+    place-items: start;
+    color: var(--text5);
+    font-size: 7.7rem;
+}
+
+.page_title .description{
+    color: var(--text2);
+    font-size: 1.5rem;
+}
+
+.projects_container{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projects_container .category{
+    font-size: 4rem;
+    color:var(--text1);
+}
+
+section{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section__content{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+

@@ -27,7 +27,7 @@
     max-height: 30vh;
     border-radius: 50%;
     aspect-ratio: 1/1;
-    background-color: transparent;
+    box-shadow: 0 0 50px var(--surface2);
 }
 .hero__info{
     display: flex;
