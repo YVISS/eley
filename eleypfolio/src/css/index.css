@@ -23,6 +23,8 @@
   --text2-light: hsl(var(--brand-hue) 30% 30%);
   --text3-light: hsl(var(--brand-hue) 30% 50%);
   --text4-light: hsl(var(--brand-hue) 30% 70%);
+  --text5-light: var(--brand-hsl);
+  --lightest: var(--brand-hsl);
 
   /* light surface */
   --surface1-light: hsl(var(--brand-hue) 25% 90%);
@@ -42,6 +44,7 @@
   --text2-dark: hsl(var(--brand-hue) 5% 75%);
   --text3-dark: hsl(var(--brand-hue) 5% 50%);
   --text4-dark: hsl(var(--brand-hue) 5% 30%);
+  --text5-dark: hsl(var(--brand-hsl) 5% 100%);
 
   /* dark surface */
   --surface1-dark: hsl(var(--brand-hue) 10% 10%);
@@ -52,23 +55,6 @@
   /* dark shadows */
   --surface-shadow-dark: hsl(var(--brand-hue) 50% 3%);
   --shadow-strength-dark: .8;
-
-  /* BRAND DIM */
-  --brand-dim: hsl(var(--brand-hue) calc(var(--brand-saturation) / 1.25) calc(var(--brand-lightness) / 1.25));
-
-  /* DIM TEXT */
-  --text1-dim: hsl(var(--brand-hue) 15% 75%);
-  --text2-dim: hsl(var(--brand-hue) 10% 61%);
-
-  /* DIM SURFACE */
-  --surface1-dim: hsl(var(--brand-hue) 10% 20%);
-  --surface2-dim: hsl(var(--brand-hue) 10% 25%);
-  --surface3-dim: hsl(var(--brand-hue) 5% 30%);
-  --surface4-dim: hsl(var(--brand-hue) 5% 35%);
-
-  /* DIM SHADOWS */
-  --surface-shadow-dim: var(--brand-hue) 30% 13%;
-  --shadow-strength-dim: .2;
 }
 
 
@@ -79,6 +65,7 @@
   --text2: var(--text2-light);
   --text3: var(--text3-light);
   --text4: var(--text4-light);
+  --text5: var(--text5-light);
   --surface1: var(--surface1-light);
   --surface2: var(--surface2-light);
   --surface3: var(--surface3-light);
@@ -98,6 +85,7 @@
     --text2: var(--text2-dark);
     --text3: var(--text3-dark);
     --text4: var(--text4-dark);
+    --text5: var(--text5-dark);
     --typing-highlight: hsl(38, 92%, 50%);
     --surface1: var(--surface1-dark);
     --surface2: var(--surface2-dark);
@@ -116,6 +104,7 @@
   --text2: var(--text2-light);
   --text3: var(--text3-light);
   --text4: var(--text4-light);
+  --text5: var(--text5-light);
   --text-highlight: hsl(266, 100%, 67%);
   --typing-highlight: hsl(217, 91%, 60%);
   --surface1: var(--surface1-light);
@@ -134,6 +123,7 @@
   --text2: var(--text2-dark);
   --text3: var(--text3-dark);
   --text4: var(--text4-dark);
+  --text5: var(--text5-dark);
   --text-highlight: hsl(38, 92%, 50%);
   --typing-highlight: hsl(258, 90%, 66%);
   --surface1: var(--surface1-dark);
@@ -204,11 +194,12 @@
 }
 
 main {
-  display: grid;
-  place-items: center;
-  place-content: center;
+  display: flex;
+  place-items: start;
+  place-content: start;
   min-height: 100vh;
   height: auto;
+  width: 100%;
   background-color: var(--darker-primary);
   gap: 20px;
 }

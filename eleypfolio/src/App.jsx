@@ -11,10 +11,12 @@ export default function MyApp() {
         <Hero />
         <div className="divider"></div>
         <main>
-        <Projects/>
-        </main>  
+          <div className="projects">
+            <Projects />
+          </div>
+        </main>
         <footer>
-          
+
         </footer>
       </div>
     </>
