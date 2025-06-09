@@ -11,7 +11,7 @@ export default function MyApp() {
         <Hero />
         <div className="divider"></div>
         <main>
-          <div className="projects">
+          <div className="project container">
             <Projects />
           </div>
         </main>

@@ -43,7 +43,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header>
+    <header className="container">
       <nav>
         <ul>
           <li className="header__icons"><a href="https://github.com/YVISS" target="blank">{githubIcon}</a></li>

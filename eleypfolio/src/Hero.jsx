@@ -34,7 +34,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className="hero">
+        <div className="hero container">
             <div className="hero__container">
                 <div className="hero__img">
                     <img src="/imgs/hero.jpg" alt="Hero Image" />
@@ -42,7 +42,7 @@ export default function Hero() {
                 <div className="hero__info">
                     <h1 className="hero__name">Hi, I'm <span className="name-highlight">Lewee Aaron A. Ombac</span> 👋</h1>
                     <h2>Aspiring <span id="typing-text" ref={typingRef}></span></h2>
-                    <p className="hero__description">3rd Year BSCS Student | Passionate about Web Development & Design 🚀</p>
+                    <p className="hero__description">3rd Year BSCS Student | Web Development & Web Design 🚀</p>
                     <div className="hero__downloadables">
                         <button>
                             <a href="#" target="_blank" download="Resume"><span>Resume</span></a>

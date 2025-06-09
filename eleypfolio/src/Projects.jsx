@@ -21,7 +21,7 @@ export default function Projects() {
                 </div>
                 <div className="projects_container">
                     {Object.entries(groupedByCategory).map(([category, items]) => (
-                        <section className={category}>
+                        <section className={category} className="section">
                             <h1 className='category'>{category}</h1>
                             <div className="section__content">
                                 <div className="cards">
