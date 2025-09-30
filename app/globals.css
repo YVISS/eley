@@ -6,7 +6,7 @@
 @layer base {
     section{
         margin: 5vw;
-        border: 1px solid red;
+        border: 1px solid red;  
     }
     .container{
         max-width: 100vw;
